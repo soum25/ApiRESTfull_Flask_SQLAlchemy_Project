@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bloc notes </title>
+</head>
+
+<body>
+
+
+    <ul>
+        {% for item in data %}
+        {% if item == "sport" %}
+        <li> <b> {{ item.title() }}</b> <br> <img src="static/sport.gif"> </li>
+
+        {% elif item == "voyager" %}
+        <li> <b> {{ item.title() }}</b> <br> <img src="static/les_courses.gif"> </li>
+
+        {% elif item == "lecture" %}
+        <li> <b> {{ item.title() }}</b> <br> <img src="static/lire.gif"> </li>
+
+        {% elif item == "lecture" %}
+        <li> <b> {{ item.title() }}</b> <br> <img src="static/voyage.gif"> </li>
+
+        {% else %}
+        <li> <b> {{ item.title() }}</b></li>
+        {% endif %}
+
+        {% endfor %}
+
+    </ul>
+
+
+
+
+</body>
+
+</html>
