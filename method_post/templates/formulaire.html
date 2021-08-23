@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <h1> Bienvenue dans votre bloc note.</h1>
+    <img src=static/image0.gif width="100px" lenght="50px">
+    <h2> 👇 Veuillez entrer vos notes svp 👇.</h2>
+
+    <form action="{{ url_for('handle_form') }}" method="post" enctype="multipart/form-data">
+        <input type="text" name="notes">
+        <input type="submit" , id="mySubmit" value="Send request">
+    </form>
+
+
+</body>
+
+</html>

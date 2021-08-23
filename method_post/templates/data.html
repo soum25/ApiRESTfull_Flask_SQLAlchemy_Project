@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bloc notes </title>
+</head>
+
+<body>
+    <ul>
+        {% for item in data %}
+        <li> <b> {{ item.title() }}</b></li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
